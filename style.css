@@ -101,11 +101,12 @@ section p {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  color: #fff5e1;
 }
 
-.icons i:hover {
-  color: #bbbab8;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
+.icons li {
+  list-style: none;
+}
+
+.icons li a {
+  color: #fff;
 }
