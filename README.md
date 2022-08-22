@@ -1,23 +1,32 @@
-# Portfolio-Mobile first
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio Mobile first
+# Portfolio Web Page
 
-> Description the project.
+> This is a Portfolio Web Page built with HTML and CSS with the helps of linters
 
 
 ## Built With
-HTML
-CSS
-Linters
+
+- HTML
+- CSS
 
 
 
 
 
+To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
 
+### Setup
 
+### Install
+
+### Usage
+
+### Run tests
+
+### Deployment
 
 
 
@@ -25,8 +34,12 @@ Linters
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/IsmailChangezi)
+- GitHub: (https://github.com/IsmailChangezi)
 
+
+
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
