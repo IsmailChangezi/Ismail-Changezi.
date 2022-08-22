@@ -18,10 +18,10 @@ header {
   width: 375px;
   height: 590px;
   background: #1c1a19;
-  background-image: url(./images/Illustration-header.png);
+  background-image: url(Illustration.png);
   background-repeat: no-repeat;
   background-size: 200px 300px;
-  background-position: 240px 390px;
+  background-position: 170px 320px;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav h5:hover {
 }
 
 section {
-  padding: 40px;
+  padding: 20px;
   margin-top: 50px;
 }
 
@@ -99,12 +99,12 @@ section p {
 
 .icons {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: flex-start;
 }
 
 .icons li {
   list-style: none;
+  padding: 14px;
 }
 
 .icons li a {
