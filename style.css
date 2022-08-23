@@ -14,6 +14,7 @@ main {
   width: 375px;
   height: 3300px;
 }
+
 header {
   height: 580px;
   background: #1c1a19;
@@ -71,14 +72,8 @@ nav h3:hover {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-
-  /* or 133% */
-
   display: flex;
   align-items: center;
-
-  /* Theme 3 / Primary 4 */
-
   color: #fff5e1;
   margin-bottom: 7px;
 }
@@ -89,11 +84,6 @@ nav h3:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  /* or 150% */
-
-  /* Theme 3 / Neutral 11 */
-
   color: #fff;
 }
 
@@ -138,12 +128,14 @@ nav h3:hover {
   height: 0px;
   border: 1px solid #212121;
 }
+
 .work-section img {
   margin: 24px 12px;
   margin-top: 70px;
   width: 327px;
   height: 237px;
 }
+
 .work-section .work-subtitle {
   font-family: "Crete Round";
   font-style: normal;
@@ -153,6 +145,7 @@ nav h3:hover {
   color: #091e42;
   padding: 10px;
 }
+
 .work-section .work-desc {
   padding: 10px;
   font-family: "Inter";
@@ -222,6 +215,7 @@ nav h3:hover {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .project-title {
   font-family: "Crete Round";
   font-style: normal;
@@ -231,6 +225,7 @@ nav h3:hover {
   color: #fff;
   margin-top: 30px;
 }
+
 .project-desc {
   font-family: "Inter";
   font-style: normal;
@@ -239,6 +234,7 @@ nav h3:hover {
   line-height: 24px;
   color: #ffffff;
 }
+
 .project-container ul {
   display: flex;
   justify-content: flex-start;
@@ -291,6 +287,7 @@ nav h3:hover {
   line-height: 24px;
   margin-bottom: 80px;
 }
+
 /* About section */
 
 .about {
@@ -308,12 +305,7 @@ nav h3:hover {
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
-  /* or 122% */
-
   letter-spacing: 0.37px;
-
-  /* Theme 3 / Primary 1 */
-
   color: #ff6b00;
   margin-top: 40px;
 }
@@ -324,12 +316,9 @@ nav h3:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
-
-  /* Neutrals/N20 */
-
   color: #f4f5f7;
 }
+
 .about a {
   display: block;
   align-items: center;
@@ -338,9 +327,6 @@ nav h3:hover {
   text-decoration: none;
   width: 161px;
   height: 48px;
-
-  /* Theme 3 / Primary 1 */
-
   background: #ff6b00;
   font-family: "Inter";
   font-style: normal;
@@ -350,6 +336,7 @@ nav h3:hover {
   color: #fff;
   margin-top: 20px;
 }
+
 .about a:hover {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
