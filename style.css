@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #170606;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  width: 375px;
+  height: 590px;
+  background: #1c1a19;
+  background-image: url(Illustration.png);
+  background-repeat: no-repeat;
+  background-size: 200px 300px;
+  background-position: 170px 320px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  background: #3c3a39;
+}
+
+nav i:hover {
+  color: #bbbab8;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+nav h5:hover {
+  color: #bbbab8;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+section {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+section h4 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin-bottom: 5px;
+}
+
+section h6 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  /* or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Theme 3 / Primary 4 */
+
+  color: #fff5e1;
+  margin-bottom: 7px;
+}
+
+section p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+
+  /* Theme 3 / Neutral 11 */
+
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icons li {
+  list-style: none;
+  padding: 14px;
+}
+
+.icons li a {
+  color: #fff;
+}
