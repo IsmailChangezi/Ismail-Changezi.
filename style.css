@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,20 +9,21 @@
 
 body {
   background-color: #170606;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+main {
+  width: 375px;
+  height: 3300px;
 }
 
 header {
-  width: 375px;
-  height: 590px;
+  height: 580px;
   background: #1c1a19;
-  background-image: url(Illustration.png);
+  background-image: url(img/Illustration.png);
   background-repeat: no-repeat;
   background-size: 200px 300px;
   background-position: 170px 320px;
+  padding: 10px;
 }
 
 nav {
@@ -43,18 +45,18 @@ nav i:hover {
   cursor: pointer;
 }
 
-nav h5:hover {
+nav h3:hover {
   color: #bbbab8;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
-section {
+.header-section {
   padding: 10px;
   margin-top: 50px;
 }
 
-section h4 {
+.header-section h4 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -65,7 +67,7 @@ section h4 {
   margin-bottom: 5px;
 }
 
-section h6 {
+.header-section h6 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -83,7 +85,7 @@ section h6 {
   margin-bottom: 7px;
 }
 
-section p {
+.header-section p {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -107,6 +109,320 @@ section p {
   padding: 14px;
 }
 
+.about a {
+  display: block;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  text-decoration: none;
+  width: 161px;
+  height: 48px;
+
+  /* Theme 3 / Primary 1 */
+
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.project-container a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.work-section-list a {
+  text-decoration: none;
+  color: #212121;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
 .icons li a {
   color: #fff;
+}
+
+/* work section */
+
+.work-section {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.work-section .work-title {
+  margin-top: 50px;
+  padding: 20px;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+.work-section hr {
+  height: 0;
+  border: 1px solid #212121;
+}
+
+.work-section img {
+  margin: 24px 12px;
+  margin-top: 70px;
+  width: 327px;
+  height: 237px;
+}
+
+.work-section .work-subtitle {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  padding: 10px;
+}
+
+.work-section .work-desc {
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.work-section-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.work-section-list li {
+  margin: 8px;
+  list-style: none;
+  padding: 9px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.project-btn {
+  margin: 8px;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  width: 130px;
+  margin-top: 10px;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* Project section */
+
+.project-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.project-box {
+  padding: 10px;
+  width: 327px;
+  height: 300px;
+  background: url(img/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.project-title {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.project-desc {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.project-container ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project-container li {
+  list-style: none;
+  margin: 8px;
+  padding: 9px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.see-project-btn {
+  display: block;
+  padding: 10px;
+  width: 327px;
+  background-color: #ff6b00;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.last-see-project-btn {
+  display: block;
+  padding: 10px;
+  width: 327px;
+  background-color: #ff6b00;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 80px;
+}
+
+/* About section */
+
+.about {
+  background-color: #1c1a19;
+  padding: 10px;
+  height: 590px;
+  background-image: url(img/Frame.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-title {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+
+  /* or 122% */
+
+  letter-spacing: 0.37px;
+
+  /* Theme 3 / Primary 1 */
+
+  color: #ff6b00;
+  margin-top: 40px;
+}
+
+.about-desc {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+
+  /* Neutrals/N20 */
+
+  color: #f4f5f7;
+}
+
+.about hr {
+  height: 0;
+  border: 1px solid #ddd8d8;
+  margin-top: 260px;
+}
+
+/* Languages section */
+
+.languages-container {
+  padding: 8px;
+  background-color: #1c1a19;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.title-container img {
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+}
+
+.lang-title {
+  font-family: "InaiMathi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.lang-list li {
+  list-style: none;
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.work-section-list a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.about a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-container a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.icons li a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
