@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -142,6 +143,12 @@ nav h3:hover {
   color: #212121;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  color: #505f79;
+  font-weight: bold;
 }
 
 .icons li a {
@@ -425,4 +432,123 @@ nav h3:hover {
 .icons li a:hover {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+
+/* Form section */
+
+.form-info-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background: #e5e5e5;
+}
+
+.form-desc h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+
+  text-align: center;
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+  margin-top: 7rem;
+}
+
+.form-main {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  margin-top: 12px;
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+#text-label {
+  margin-top: 19px;
+  min-height: 114px;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  /* or 160% */
+
+  /* Theme 3 / Neutral 2 */
+
+  color: #3c3a39;
+  background: #fbf8f7;
+  padding: 10px;
+}
+
+.form-button {
+  height: 3rem;
+  width: 9rem;
+  margin: 16px 80px;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: #e5e5e5;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons li {
+  list-style: none;
+  padding: 20px;
+}
+
+.form-button:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in;
 }
