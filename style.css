@@ -11,13 +11,18 @@
     margin: 0;
   }
 
+  footer a {
+    text-decoration: none;
+    color: #505f79;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #3e3c3c;
     color: #fff;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -28,7 +33,6 @@
   nav {
     display: flex;
     justify-content: space-between;
-
     padding: 30px;
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -45,17 +49,18 @@
     cursor: pointer;
   }
 
+  .nav-title h3 {
+    padding: 18px;
+  }
+
   nav h3:hover {
     color: #bbbab8;
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
+
   .nav-items {
     display: none;
-  }
-
-  .nav-title h3 {
-    padding: 18px;
   }
 
   .nav-title a {
@@ -596,7 +601,7 @@
     justify-content: space-between;
     background: #3e3c3c;
     color: #fff;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -613,6 +618,7 @@
   nav i {
     display: none !important;
   }
+
   .nav-items {
     display: flex;
     justify-content: space-between;
@@ -631,6 +637,7 @@
   .nav-title {
     margin-left: 70px;
   }
+
   .nav-title h3 {
     padding: 13px;
   }
@@ -653,23 +660,26 @@
     background-repeat: no-repeat;
     background-position: right;
   }
+
   .hero-desc {
     padding-right: 40rem;
     margin: 70px;
   }
+
   .hero-desc h4 {
-    font-family: "Crete Round";
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
+
     /* or 113% */
 
     color: #f55800;
   }
 
   .hero-desc h6 {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -678,7 +688,7 @@
   }
 
   .hero-desc p {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -711,6 +721,7 @@
     justify-content: space-between;
     margin-top: 3.6rem;
   }
+
   .work-title {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
@@ -722,7 +733,7 @@
   .work-title-container hr {
     margin-top: 2rem;
     width: 764px;
-    height: 0px;
+    height: 0;
     border: 1px solid #212121;
   }
 
@@ -735,6 +746,7 @@
   .work-flex-desc {
     margin: 1.5rem;
   }
+
   .work-flex-desc h2 {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
@@ -744,12 +756,13 @@
   }
 
   .work-flex-desc p {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
+
   .work-section-list {
     display: flex;
     justify-content: flex-start;
@@ -788,6 +801,7 @@
   }
 
   /* PROJECT SECTION */
+
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -831,6 +845,7 @@
     background-size: 50px;
     background-repeat: no-repeat;
   }
+
   .project-title {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
@@ -911,8 +926,9 @@
     /* Theme 3 / Primary 1 */
 
     color: #ff6b00;
-    margin-top: 40px;
     margin: 70px;
+    margin-top: 40px;
+
     /* padding: 20px; */
   }
 
@@ -1133,10 +1149,5 @@
   .form-button:hover {
     cursor: pointer;
     transition: 0.5s ease-in;
-  }
-
-  footer a {
-    text-decoration: none;
-    color: #505f79;
   }
 }
