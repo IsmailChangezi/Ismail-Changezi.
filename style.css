@@ -11,11 +11,6 @@
     margin: 0;
   }
 
-  footer a {
-    text-decoration: none;
-    color: #505f79;
-  }
-
   header {
     display: flex;
     justify-content: space-between;
@@ -182,12 +177,15 @@
 
   .work-section {
     background-color: #fff;
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .work-section .work-title {
     margin-top: 50px;
-    padding: 20px;
+    padding: 5px;
     font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -199,6 +197,18 @@
   .work-section hr {
     height: 0;
     border: 1px solid #212121;
+  }
+
+  .work-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-flex-desc {
+    text-align: left;
+    width: 350px;
   }
 
   .work-section img {
@@ -551,7 +561,7 @@
   .form-button {
     height: 3rem;
     width: 9rem;
-    margin: 16px -2px;
+    margin: 16px 10rem;
     background: #ff6b00;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -594,6 +604,11 @@
 
   body {
     width: 100%;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #505f79;
   }
 
   header {
@@ -726,8 +741,9 @@
     font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 8px;
   }
 
   .work-title-container hr {
@@ -805,7 +821,7 @@
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 10px;
     margin-top: 20px;
     padding: 10px;
   }
@@ -983,17 +999,15 @@
   .languages-container {
     padding: 8px;
     background-color: #1c1a19;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 80px;
   }
 
   .title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     margin-top: 40px;
   }
 
@@ -1009,7 +1023,7 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    text-align: center;
+    text-align: right;
     color: #fff;
     margin-left: 10px;
   }
@@ -1018,7 +1032,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
   }
 
   .lang-list li {
