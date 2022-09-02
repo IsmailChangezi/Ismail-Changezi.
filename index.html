@@ -17,11 +17,23 @@
   <body>
     <main>
       <header>
+        <div class="nav-title">
+          <h3><a href="index.html">Ismail Changezi</a></h3>
+        </div>
         <nav>
-          <h3>Ismail Changezi</h3>
+          <ul class="nav-items">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#"><img src="img/mail.png" alt="" /></a>
+            </li>
+          </ul>
           <i class="fa-solid fa-bars"></i>
         </nav>
-        <section class="header-section">
+      </header>
+      <section class="header-section">
+        <div class="hero-desc">
           <h4>Hey There.<br />I'm Ismail</h4>
           <h6>I'm a Software Developer</h6>
           <p>
@@ -29,48 +41,87 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
           </p>
-          <ul class="icons">
-            <li>
-              <a href="#"> <i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="#"> <i class="fa-brands fa-angellist"></i></a>
-            </li>
-            <li>
-              <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-            </li>
-          </ul>
-        </section>
-      </header>
+        </div>
+
+        <ul class="icons">
+          <li>
+            <a href="#"> <i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-angellist"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </section>
 
       <!-- Work section -->
       <section class="work-section">
-        <h1 class="work-title">My Recent Works</h1>
-        <hr />
-        <img src="img/Placeholder.png" alt="Placeholder" />
-        <h2 class="work-subtitle">Multi-Post Stories</h2>
-        <p class="work-desc">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="work-section-list">
-          <li><a href="#">css</a></li>
-          <li><a href="#">html</a></li>
-          <li><a href="#">bootstrap</a></li>
-          <li><a href="#">Ruby</a></li>
-        </ul>
-        <a href="#" class="project-btn">See project</a>
+        <div class="work-title-container">
+          <h1 class="work-title">My Recent Works</h1>
+          <hr />
+        </div>
+        <div class="work-flex-container">
+          <img src="img/plcholder.png" alt="Placeholder" />
+
+          <div class="work-flex-desc">
+            <h2 class="work-subtitle">Multi-Post Stories</h2>
+            <p class="work-desc">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="work-section-list">
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+              <li><a href="#">bootstrap</a></li>
+              <li><a href="#">Ruby</a></li>
+            </ul>
+            <a href="#" class="project-btn">See project</a>
+          </div>
+        </div>
 
         <!-- project Section -->
 
         <div class="project-container">
+          <div class="project-box first-box">
+            <a href="#" class="see-project-btn">See project</a>
+          </div>
+
+          <div class="project-box data-dashboard">
+            <h2 class="project-title">Data Dashboard Healthcare</h2>
+            <p class="project-desc">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <ul>
+              <li><a href="">html</a></li>
+              <li><a href="">css</a></li>
+              <li><a href="">Ruby</a></li>
+            </ul>
+          </div>
+          <!-- <a href="#" class="see-project-btn">See project</a> -->
+          <div class="project-box web-portfolio">
+            <h2 class="project-title">Web Portfolio</h2>
+            <p class="project-desc">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <ul>
+              <li><a href="">html</a></li>
+              <li><a href="">css</a></li>
+              <li><a href="">Ruby</a></li>
+            </ul>
+          </div>
+          <!-- <a href="#" class="see-project-btn">See project</a> -->
           <div class="project-box">
             <h2 class="project-title">Profesional Art Printing Data</h2>
             <p class="project-desc">
@@ -83,9 +134,9 @@
               <li><a href="">Ruby</a></li>
             </ul>
           </div>
-          <a href="#" class="see-project-btn">See project</a>
-          <div class="project-box">
-            <h2 class="project-title">Profesional Art Printing Data</h2>
+          <!-- <a href="#" class="see-project-btn">See project</a> -->
+          <div class="project-box data-dashboard">
+            <h2 class="project-title">Data Dashboard Healthcare</h2>
             <p class="project-desc">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
@@ -96,9 +147,9 @@
               <li><a href="">Ruby</a></li>
             </ul>
           </div>
-          <a href="#" class="see-project-btn">See project</a>
-          <div class="project-box">
-            <h2 class="project-title">Profesional Art Printing Data</h2>
+          <!-- <a href="#" class="see-project-btn">See project</a> -->
+          <div class="project-box web-portfolio">
+            <h2 class="project-title">Web Portfolio</h2>
             <p class="project-desc">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
@@ -109,46 +160,7 @@
               <li><a href="">Ruby</a></li>
             </ul>
           </div>
-          <a href="#" class="see-project-btn">See project</a>
-          <div class="project-box">
-            <h2 class="project-title">Profesional Art Printing Data</h2>
-            <p class="project-desc">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul>
-              <li><a href="">html</a></li>
-              <li><a href="">css</a></li>
-              <li><a href="">Ruby</a></li>
-            </ul>
-          </div>
-          <a href="#" class="see-project-btn">See project</a>
-          <div class="project-box">
-            <h2 class="project-title">Profesional Art Printing Data</h2>
-            <p class="project-desc">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul>
-              <li><a href="">html</a></li>
-              <li><a href="">css</a></li>
-              <li><a href="">Ruby</a></li>
-            </ul>
-          </div>
-          <a href="#" class="see-project-btn">See project</a>
-          <div class="project-box">
-            <h2 class="project-title">Profesional Art Printing Data</h2>
-            <p class="project-desc">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul>
-              <li><a href="">html</a></li>
-              <li><a href="">css</a></li>
-              <li><a href="">Ruby</a></li>
-            </ul>
-          </div>
-          <a href="#" class="last-see-project-btn">See Project</a>
+          <!-- <a href="#" class="last-see-project-btn">See Project</a> -->
         </div>
       </section>
       <!-- About section -->
@@ -185,6 +197,7 @@
             <img src="img/Rectangle56.png" alt="" />
             <h2 class="lang-title">FrameWorks</h2>
           </div>
+
           <ul class="lang-list">
             <li>Bootstrap</li>
             <li>Ruby on Rails</li>
@@ -226,7 +239,9 @@
                   maxlength="30"
               /></label>
               <hr />
-              
+
+              <label>
+                <input
                   id="email"
                   name="email"
                   type="email"
@@ -272,5 +287,6 @@
         </div>
       </footer>
     </main>
+    <!-- End  -->
   </body>
 </html>
