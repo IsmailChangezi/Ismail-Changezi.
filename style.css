@@ -623,11 +623,11 @@
     line-height: 20px;
     padding: 16px;
   }
- 
+
   .nav-title h3 {
     padding: 13px;
   }
- 
+
   nav h3:hover {
     color: #bbbab8;
     transition: 0.5s ease-in-out;
