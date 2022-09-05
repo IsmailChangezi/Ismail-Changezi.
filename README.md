@@ -25,10 +25,11 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 ### Deployment
+You can find the working version of this site at https://ismailchangezi.github.io/IsmailChangezi.github.o/ .
+Please check my site and let me know what you think about it.
 
 
-
-## Authors
+## 
 
 👤 *Ismail Changezi*
 
