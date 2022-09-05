@@ -624,12 +624,16 @@
     padding: 16px;
   }
  
+   .nav-title h3 {
+    padding: 13px;
+  }
+ 
   nav h3:hover {
     color: #bbbab8;
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
-
+ 
   nav {
     display: flex;
     justify-content: center;
@@ -650,7 +654,7 @@
     display: flex;
     justify-content: space-between;
   }
-
+ 
   .nav-items li {
     list-style: none;
     padding: 13px;
@@ -663,10 +667,6 @@
 
   .nav-title {
     margin-left: 70px;
-  }
-
-  .nav-title h3 {
-    padding: 13px;
   }
 
   .nav-title a {
