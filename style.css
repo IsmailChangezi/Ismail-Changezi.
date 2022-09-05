@@ -624,6 +624,7 @@
     padding: 16px;
   }
  
+
   .nav-title h3 {
     padding: 13px;
   }
@@ -654,7 +655,7 @@
     display: flex;
     justify-content: space-between;
   }
-
+ 
   .nav-items li {
     list-style: none;
     padding: 13px;
@@ -668,7 +669,7 @@
   .nav-title {
     margin-left: 70px;
   }
- 
+
   .nav-title a {
     text-decoration: none;
     color: #fff;
