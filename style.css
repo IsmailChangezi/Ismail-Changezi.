@@ -602,10 +602,6 @@
     padding: 0;
   }
 
-  body {
-    width: 100%;
-  }
-
   footer a {
     text-decoration: none;
     color: #505f79;
@@ -677,12 +673,12 @@
   /* Hero section */
 
   .header-section {
+    width: 100%;
     height: 90vh;
     background: #1c1a19;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    width: 100%;
     background-image: url(img/Group.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -740,7 +736,8 @@
   /* WORK SECTION */
 
   .work-section {
-    margin: 80px;
+    padding: 80px;
+    width: 100%;
   }
 
   .work-title-container {
@@ -840,7 +837,7 @@
 
   .project-box {
     padding: 10px;
-    width: 327px;
+    width: 28%;
     height: 300px;
     background: url(img/background.png);
     background-size: 100% 100%;
