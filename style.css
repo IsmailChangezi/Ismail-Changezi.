@@ -39,6 +39,7 @@ nav {
   line-height: 24px;
   color: white;
   background: #3c3a39;
+  margin-right: 7.5%;
 }
 
 nav i:hover {
@@ -46,7 +47,9 @@ nav i:hover {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-
+.nav-title {
+  margin-left: 7.5%;
+}
 .nav-title h3 {
   padding: 18px;
 }
