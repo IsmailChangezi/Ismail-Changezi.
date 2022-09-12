@@ -9,7 +9,9 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -29,10 +31,12 @@ header {
 }
 
 .hamburger {
-  position: fixed;
+  position: relative;
   z-index: 100;
-  top: 1rem;
-  right: 1rem;
+
+  /* top: 1rem;
+  right: 1rem; */
+
   padding: 10px;
   color: #fbf8f7;
   background: none;
