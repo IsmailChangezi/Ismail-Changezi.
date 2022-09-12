@@ -13,6 +13,7 @@ body {
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,12 +24,82 @@ header {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px;
   background-color: none;
 }
 
-nav {
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 10px;
+  color: #fbf8f7;
+  background: none;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3c3a39;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.menu li {
+  list-style: none;
+  padding: 16px;
+  font-size: large;
+  margin-left: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+nav i:hover {
+  color: #bbbab8;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-title {
+  margin-left: 7.5%;
+}
+
+.nav-title h3 {
+  padding: 18px;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-img {
+  display: none;
+}
+
+/* nav {
   display: flex;
   justify-content: space-between;
   padding: 30px;
@@ -63,13 +134,15 @@ nav h3:hover {
 }
 
 .nav-items {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30px;
 }
-
 .nav-title a {
   text-decoration: none;
   color: #fff;
-}
+} */
 
 .header-section {
   background-color: #1c1a19;
@@ -602,24 +675,35 @@ footer {
 
 /* DEKSTOP VERSION */
 
-@media screen and (min-width: 786px) {
-  .nav-items {
+@media screen and (min-width: 900px) {
+  header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-right: 40px;
   }
 
-  .nav-items li {
-    list-style: none;
-    padding: 10px;
+  .hamburger {
+    display: none;
   }
 
-  .nav-items a {
-    text-decoration: none;
-    color: #fff;
+  .menu {
+    position: relative;
+    top: 85px;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 10px;
   }
 
-  nav i {
-    display: none !important;
+  .menu li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 17px;
+  }
+
+  .menu-img {
+    display: block;
   }
 
   .header-section {
@@ -760,10 +844,4 @@ footer {
     line-height: 24px;
     color: #fff;
   }
-}
-
-* :focus {
-  background-color: red;
-  color: #ddd8d8;
-  transition: 0.5s ease;
 }
