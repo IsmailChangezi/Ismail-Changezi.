@@ -13,23 +13,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+  
   </head>
   <body>
-    <main>
+    
       <header>
         <div class="nav-title">
           <h3><a href="index.html">Ismail Changezi</a></h3>
         </div>
         <nav>
-          <ul class="nav-items">
-            <li><a href="#work">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#form">Contact</a></li>
-            <li>
-              <a href="#form"><img src="img/mail.png" alt="Mail" /></a>
-            </li>
+          <ul class="menu">
+            <li><a class="menuItem" href="#work" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a class="menuItem" href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a class="menuItem" href="#form" onclick="toggleMenu()">Contact</a></li>
+            <li><a class="menuItem " href="#form" onclick="toggleMenu()"><img class="menu-img" src="img/mail.png" alt=""></a></li>
           </ul>
-          <i class="fa-solid fa-bars"></i>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon fa-solid fa-bars"></i>
+            <i class="closeIcon fa-solid fa-xmark"></i>
+          </button>   
         </nav>
       </header>
       <section class="header-section">
@@ -287,9 +290,10 @@
           </ul>
         </div>
       </footer>
-    </main>
+    
     <!-- End  -->
   </body>
+  <script src="app.js"></script>
 </html>
 
 <!-- desktop vertion poritifoli -->
