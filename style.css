@@ -39,12 +39,17 @@ nav {
   line-height: 24px;
   color: white;
   background: #3c3a39;
+  margin-right: 7.5%;
 }
 
 nav i:hover {
   color: #bbbab8;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+
+.nav-title {
+  margin-left: 7.5%;
 }
 
 .nav-title h3 {
@@ -755,4 +760,10 @@ footer {
     line-height: 24px;
     color: #fff;
   }
+}
+
+* :focus {
+  background-color: red;
+  color: #ddd8d8;
+  transition: 0.5s ease;
 }
