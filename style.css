@@ -8,6 +8,48 @@
   margin: 0;
 }
 
+.modal-header i {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-lists ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.modal-lists li {
+  list-style: none;
+  padding: 10px 10px;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.modal-lists a {
+  text-decoration: none;
+  color: #091e42;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.modal-buttons a {
+  padding: 16px;
+  text-decoration: none;
+  margin: 2px;
+  margin-top: 10px;
+  background: #ff6b00;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   width: 100vw;
   max-width: 100%;
@@ -101,6 +143,10 @@ nav i:hover {
 
 .menu-img {
   display: none;
+}
+
+.modal-header a {
+  text-decoration: none;
 }
 
 /* nav {
@@ -685,6 +731,7 @@ footer {
   transition: 0.5ms ease-in-out;
   display: none;
 }
+
 .modal.show {
   display: block;
   z-index: 100;
@@ -692,6 +739,7 @@ footer {
   top: 0;
   left: 0;
 }
+
 .modal-container {
   display: flex;
   flex-direction: column;
@@ -706,46 +754,11 @@ footer {
   justify-content: space-between;
   width: 100%;
   padding: 10px 10px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 30px;
-}
-
-.modal-header a {
-  text-decoration: none;
-}
-
-.modal-header i {
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.modal-lists ul {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-}
-
-.modal-lists li {
-  list-style: none;
-  padding: 10px 10px;
-  border: 1px solid black;
-  margin: 3px;
-}
-
-.modal-lists a {
-  text-decoration: none;
-  color: #091e42;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  background-color: #fff;
-  padding: 0.5rem;
 }
 
 .modal-body img {
@@ -758,20 +771,11 @@ footer {
   font-weight: 400;
   font-size: 16px;
 }
+
 .modal-buttons {
   margin-top: 20px;
 }
-.modal-buttons a {
-  padding: 16px;
-  text-decoration: none;
-  margin-top: 10px;
-  background: #ff6b00;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  margin: 2px;
-}
+
 /* DEKSTOP VERSION */
 
 @media screen and (min-width: 900px) {
@@ -955,6 +959,7 @@ footer {
     margin: 100px 100px;
     padding: 15px 15px;
   }
+
   .modal-body {
     display: flex;
     justify-content: space-evenly;
