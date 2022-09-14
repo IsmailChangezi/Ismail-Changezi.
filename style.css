@@ -411,7 +411,7 @@ nav h3:hover {
 }
 
 .project-box {
-  padding: 10px;
+  /* padding: 10px; */
   width: 327px;
   height: 300px;
   background: url(img/background.png);
@@ -451,6 +451,34 @@ nav h3:hover {
 }
 
 .see-project-btn {
+  display: none;
+}
+
+.project-box:hover {
+  background: url(img/firstimage.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: 100;
+  transition: 0.5s ease-in-out;
+}
+
+.project-box:hover .see-project-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6b00;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* .see-project-btn {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -480,7 +508,7 @@ nav h3:hover {
   font-size: 17px;
   line-height: 24px;
   margin-bottom: 80px;
-}
+} */
 
 /* About section */
 
