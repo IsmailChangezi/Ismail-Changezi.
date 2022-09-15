@@ -443,15 +443,15 @@ nav h3:hover {
   justify-content: flex-start;
 }
 
+.see-project-btn {
+  display: none;
+}
+
 .project-container li {
   list-style: none;
   margin: 8px;
   padding: 9px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-.see-project-btn {
-  display: none;
 }
 
 .project-box:hover {
@@ -802,6 +802,26 @@ footer {
 
 .modal-buttons {
   margin-top: 20px;
+}
+
+small {
+  display: none;
+}
+
+small.show {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  margin-top: 2px;
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #c50c0c;
 }
 
 /* DEKSTOP VERSION */
