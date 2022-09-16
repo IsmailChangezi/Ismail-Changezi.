@@ -169,3 +169,26 @@ email.addEventListener("blur", () => {
     small.classList.add("show");
   }
 });
+
+/// STORING FORM DATA ///
+
+let nameSpace = document.getElementById("name");
+let textSpace = document.getElementById("text");
+function storeData() {
+  localStorage.setItem("UserName", nameSpace.value);
+  localStorage.setItem("Email", email.value);
+  localStorage.setItem("Text", textSpace.value);
+  console.log(localStorage);
+}
+
+function showData() {
+  let emailData = localStorage.getItem("Email");
+  let nameData = localStorage.getItem("UserName");
+  let textData = localStorage.getItem("Text");
+
+  email.value = emailData;
+  nameSpace.value = nameData;
+  textSpace.innerText = textData;
+}
+
+showData();
