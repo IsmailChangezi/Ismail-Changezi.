@@ -169,3 +169,46 @@ email.addEventListener("blur", () => {
     small.classList.add("show");
   }
 });
+
+/// STORING FORM DATA ///
+const formData = localStorage.getItem("formData");
+let userName = document.getElementById("name");
+let textSpace = document.getElementById("text");
+
+let dataForm = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+function addToLocal() {
+  dataForm.name = userName.value;
+  dataForm.email = email.value;
+  dataForm.message = textSpace.value;
+
+  const data = JSON.stringify(dataForm);
+
+  localStorage.setItem("formData", data);
+}
+
+userName.addEventListener("change", () => {
+  addToLocal();
+});
+
+email.addEventListener("change", () => {
+  addToLocal();
+});
+
+textSpace.addEventListener("change", () => {
+  addToLocal();
+});
+
+if (formData === null) {
+  // console.log('Empty element');
+} else {
+  dataForm = JSON.parse(formData);
+
+  document.getElementById("name").value = dataForm.name;
+  document.getElementById("email").value = dataForm.email;
+  document.getElementById("text").value = dataForm.message;
+}
