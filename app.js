@@ -171,24 +171,44 @@ email.addEventListener("blur", () => {
 });
 
 /// STORING FORM DATA ///
-
-let nameSpace = document.getElementById("name");
+const formData = localStorage.getItem("formData");
+let userName = document.getElementById("name");
 let textSpace = document.getElementById("text");
-function storeData() {
-  localStorage.setItem("UserName", nameSpace.value);
-  localStorage.setItem("Email", email.value);
-  localStorage.setItem("Text", textSpace.value);
-  console.log(localStorage);
+
+let dataForm = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+function addToLocal() {
+  dataForm.name = userName.value;
+  dataForm.email = email.value;
+  dataForm.message = textSpace.value;
+
+  const data = JSON.stringify(dataForm);
+
+  localStorage.setItem("formData", data);
 }
 
-function showData() {
-  let emailData = localStorage.getItem("Email");
-  let nameData = localStorage.getItem("UserName");
-  let textData = localStorage.getItem("Text");
+userName.addEventListener("change", () => {
+  addToLocal();
+});
 
-  email.value = emailData;
-  nameSpace.value = nameData;
-  textSpace.innerText = textData;
+email.addEventListener("change", () => {
+  addToLocal();
+});
+
+textSpace.addEventListener("change", () => {
+  addToLocal();
+});
+
+if (formData === null) {
+  // console.log('Empty element');
+} else {
+  dataForm = JSON.parse(formData);
+
+  document.getElementById("name").value = dataForm.name;
+  document.getElementById("email").value = dataForm.email;
+  document.getElementById("text").value = dataForm.message;
 }
-
-showData();
