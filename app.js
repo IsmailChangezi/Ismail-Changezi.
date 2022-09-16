@@ -204,10 +204,10 @@ textSpace.addEventListener("change", () => {
 });
 
 if (formData === null) {
-  // console.log('Empty element');
+
 } else {
   dataForm = JSON.parse(formData);
-
+  
   document.getElementById("name").value = dataForm.name;
   document.getElementById("email").value = dataForm.email;
   document.getElementById("text").value = dataForm.message;
